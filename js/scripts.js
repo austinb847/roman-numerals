@@ -11,6 +11,12 @@ var toRomanNumeral = function(number) {
     for (var numeral in romanNumeralsDict) {
       currValue = romanNumeralsDict[numeral];
       index = keys.indexOf(numeral);
+
+      while(number >= currValue) {
+        if(count < 4) {
+          roman.push(numeral)
+        }
+      }
     }
     
     
