@@ -1,15 +1,16 @@
 //Back end logic
 var toRomanNumeral = function(number) {
   if (number > 0 && number <= 3999) {
-    var romanNumeralsDict = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000};
-    var roman = ""
-    for (var key in romanNumeralsDict) {
-        var value = romanNumeralsDict[key]
-      if (value === number) {
-        roman = key;
-        break;
-      }
-    }
+    var romanNumeralsDict = {"M":1000, "D":500, "C":100, "L":50, "X":10, "V":5, "I":1};
+    var roman = [];
+    var keys = Object.keys(romanNumeralsDict);
+    var currValue;
+    var index;
+    var count = 1;
+    
+    
+    
+    
     return roman;
 
   } else {
