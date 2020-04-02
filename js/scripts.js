@@ -1,6 +1,10 @@
 //Back end logic
 var toRomanNumeral = function(number) {
-  return number
+  if (number > 0 && number <= 3999) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 
