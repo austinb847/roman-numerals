@@ -1,7 +1,16 @@
 //Back end logic
 var toRomanNumeral = function(number) {
   if (number > 0 && number <= 3999) {
-    return true;
+    var romanNumeralsDict = {"I":1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000};
+    for (var num in romanNumeralsDict) {
+      
+    }
+
+
+
+
+
+
   } else {
     return false;
   }
