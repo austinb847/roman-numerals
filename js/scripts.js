@@ -8,6 +8,10 @@ var toRomanNumeral = function(number) {
     var index;
     var count = 1;
     
+    for (var numeral in romanNumeralsDict) {
+      currValue = romanNumeralsDict[numeral];
+      index = keys.indexOf(numeral);
+    }
     
     
     
