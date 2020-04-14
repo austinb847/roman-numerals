@@ -1,5 +1,4 @@
-//Back end logic
-var toRomanNumeral = function(number) {
+export var toRomanNumeral = function(number) {
   if (number > 0 && number <= 3999) {
     var romanNumeralsDict = {M: 1000, CM: 900, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40, X: 10, IX: 9, V:5, IV: 4, I: 1};
     var roman = "";
@@ -19,21 +18,3 @@ var toRomanNumeral = function(number) {
     return false;
   }
 };
-
-
-
-
-
-
-//Front end logic
-$(document).ready(function() {
-  $("#roman-numeral").submit(function(event) {
-    event.preventDefault();
-    var userNum = parseInt($("input#userNum").val());
-    var result = toRomanNumeral(userNum);
-    $(".numInput").text(userNum);
-    $(".romanNumeral").text(result);
-    $("#result").show();
-  });
-
-});
