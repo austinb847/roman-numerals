@@ -15,5 +15,5 @@ export var toRomanNumeral = function(number) {
   } else {
     return false;
   } */
-  
+  return number;
 };
